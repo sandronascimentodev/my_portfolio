@@ -22,8 +22,84 @@
                     <li><a href="#">Contact</a></li>
                 </ul>
             </nav>
+            <div class="header-text">
+                <p>UI/UX Designer</p>
+                <h1>Hi, I'm <span>Sandro</span><br>Nascimento From Brazil</h1>
+            </div>
         </div>
     </div>
+    <!---------------about----------------------->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-01">
+                    <img src="images/user.png">
+                </div>
+                <div class="about-col-02">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>Incomings of large social networks, which are nowadays
+                        measured in billions of dollars and are steepling rise from
+                        year to year, mostly come out of online advertising. When
+                        managing advertising campaigns, decisions about which ad group
+                        and ads should be active and for which more advertising money is
+                        intended, are particularly important.
+                    </p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>UI/UX</span><br>Designing Web/App interfaces</li>
+                            <li><span>Web Development</span><br>Web app Development</li>
+                            <li><span>App Development</span><br>Building Android/iOS apps</li>
+                        </ul>
+                    </div>
+
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>2021 - Current</span><br>Self-employed Web Developer and UI/UX Designer</li>
+                            <li><span>2020 - Current</span><br>Support Analist at School and College UniSapiens</li>
+                            <li><span>2020 - Current</span><br>Self-employed Graphic Designer</li>
+                            <li><span>2019 - 2020</span><br>Computing Trainee at School and College UniSapiens</li>
+                        </ul>
+                    </div>
+
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2022</span><br>Graduate Degree in Data Analysis</li>
+                            <li><span>2022</span><br>Graduate Degree in Multiplatform Mobile Application Projects</li>
+                            <li><span>2022</span><br>Undergraduate Degree in Development Games</li>
+                            <li><span>2022</span><br>Course Certificate in Web Development</li>
+                            <li><span>2020</span><br>Course Certificate in Graphic Design</li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <script>
+
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+        function opentab(tabname) {
+            for (tablink of tablinks) {
+                tablink.classList.remove("active-link");
+            }
+            for (tabcontent of tabcontents) {
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+
+    </script>
+
 </body>
 
 </html>
