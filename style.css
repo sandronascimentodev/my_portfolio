@@ -145,17 +145,17 @@ nav ul li a:hover::after {
     font-size: 14px;
 }
 
-.tab-contents{
+.tab-contents {
     display: none;
 }
 
-.tab-contents.active-tab{
+.tab-contents.active-tab {
     display: block;
 }
 
 /*-------------services------------*/
 #services {
-    padding: 30px 0; 
+    padding: 30px 0;
 }
 
 .services-list {
@@ -193,16 +193,16 @@ nav ul li a:hover::after {
     display: inline-block;
 }
 
-.services-list div:hover  {
-background: #ff004f;
-transform: translateY(-10px);
+.services-list div:hover {
+    background: #ff004f;
+    transform: translateY(-10px);
 }
 
 /*-------------portifolio------------*/
 
 
 #portifolio {
-padding: 50px 0;
+    padding: 50px 0;
 }
 
 .work-list {
@@ -211,6 +211,7 @@ padding: 50px 0;
     grid-gap: 40px;
     margin-top: 50px;
 }
+
 .work {
     border-radius: 10px;
     position: relative;
@@ -218,15 +219,16 @@ padding: 50px 0;
 }
 
 .work img {
-width: 100%;
-border-radius: 10px;
-display: block;
-transition: transform 0.5s;
+    width: 100%;
+    border-radius: 10px;
+    display: block;
+    transition: transform 0.5s;
 }
+
 .layer {
     width: 100%;
     height: 0;
-    background: linear-gradient(rgba(0,0,0,0.6), #ff004f);
+    background: linear-gradient(rgba(0, 0, 0, 0.6), #ff004f);
     border-radius: 10px;
     position: absolute;
     left: 0;
@@ -247,7 +249,7 @@ transition: transform 0.5s;
     margin-bottom: 20px;
 }
 
-.layer a{
+.layer a {
     margin-top: 20px;
     color: #ff004f;
     text-decoration: none;
@@ -259,13 +261,15 @@ transition: transform 0.5s;
     border-radius: 50%;
     text-align: center;
 }
-.work:hover img{
-transform: scale(1.1);
+
+.work:hover img {
+    transform: scale(1.1);
 }
 
-.work:hover .layer{
-height: 100%;
+.work:hover .layer {
+    height: 100%;
 }
+
 .btn {
     display: block;
     margin: 50px auto;
@@ -279,5 +283,5 @@ height: 100%;
 }
 
 .btn:hover {
-background: #ff004f;
+    background: #ff004f;
 }
