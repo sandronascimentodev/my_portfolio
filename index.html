@@ -187,7 +187,7 @@
             </div>
         </div>
         <div class="coyright">
-            <p>Copyright © Sandro. <i class="fa-solid fa-heart"></i></p>
+            <p>Copyright © Sandro.</p>
         </div>
     </div>
     <script>
@@ -246,20 +246,20 @@
     </script>
 
     <script>
-        const scriptURL = '<https://script.google.com/macros/s/AKfycbw9t6Tbfo6RBZM4nkTpJai1vBlwVoAIuEetaZWl1tlwYOCOB-L7HPDelf54yRcLRUz1/exec>'
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbxmn7E7nb_0ubbA2H_5k8ELu8FH8hJ3OZHQ8anHfH8Bwb0xBiDMMJlVC1HRLic_2RXi/exec'
         const form = document.forms['submit-to-google-sheet']
-        const msg =document.getElementById("msg")
+        const msg = document.getElementById("msg")
 
         form.addEventListener('submit', e => {
             e.preventDefault()
             fetch(scriptURL, { method: 'POST', body: new FormData(form) })
                 .then(response => {
-                msg.innerHTML = "Message sent successfully"
-                setTimeout(function(){
-                    msg.innerHTML =""
-                }, 5000)
-                form.reset()
-            })
+                    msg.innerHTML = "Message sent successfully"
+                    setTimeout(function () {
+                        msg.innerHTML = ""
+                    }, 5000)
+                    form.reset()
+                })
                 .catch(error => console.error('Error!', error.message))
         })
     </script>
